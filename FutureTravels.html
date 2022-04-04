@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <base target="newSpace">
+        <title>Future Travels</title>
+        <meta name="author" content= "Victoria Mae C. Rubenos">
+        <script language = "javascript">
+            function writeText(txt) {
+                document.getElementById("desc").innerHTML=txt;
+                }
+                function dissolveText(txt) {
+                    document.getElementById("desc").innerHTML=txt;
+                }
+                </script>
+        <style>
+            body{
+                margin: 10px;
+                background-color:#FBE7C6;
+            }
+            h1{
+                text-align: center;
+                font-size: 70px;
+                font-family: Verdana;
+                color:#755139FF;
+            }
+            p#desc{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: black;
+                font-size: 40px;
+                text-align: center;
+            }
+            .homepage{
+            padding:10px 20px;
+            border-radius: 5000px;
+            background: #755139FF;
+            color: white;
+            border:2px solid #755139FF;
+            font-size: 16px;
+            transition: all .5s ease-in;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .homepage:hover{
+            background-color: transparent;
+            border-color: #755139FF;
+            color: #755139FF;
+        }
+        </style>
+</head>
+<body>
+<h1>My Dream Travel</h1>
+
+
+<br>
+<div align="center">
+    <img src="Futuretravels.jpg" usemap="#FutureTravels">
+    <map name="FutureTravels">
+        <area shape="rect" coords="93, 658, 523, 1017" href="Paris.html" onmouseover="writeText('This country is Paris.');"onmouseout="dissolveText('')"/> 
+        <area shape="rect" coords="556, 659, 983, 1016" href="Japan.html" onmouseover="writeText('This country is Japan.');"onmouseout="dissolveText('')"/>
+        <area shape="rect" coords="1027, 659, 1458, 1010" href="Hawaii.html" onmouseover="writeText('This country is Hawaii.');"onmouseout="dissolveText('')"/>
+        <area shape="circle" coords="249, 339, 427" href="Newyork.html" onmouseover="writeText('This country is New York.');"onmouseout="dissolveText('')"/>
+        <area shape="rect" coords="1093, 107, 1388, 574" href="Iceland.html" onmouseover="writeText('This country is Iceland.');"onmouseout="dissolveText('')"/>
+    </map>
+</div>
+
+<p id="desc"></p>
+
+<p><a class="homepage" href="/homepage.html">Home</a></p>
+
+
+</body>
+</html>
